@@ -1,0 +1,1 @@
+# DeveloperStore_TestePratico
