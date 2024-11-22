@@ -1,0 +1,16 @@
+C:\CodigoFonte\DeveloperStore_TestePratico\DeveloperStore_TestePratico\DeveloperStore\DeveloperStore.Data\bin\Debug\net8.0\DeveloperStore.Data.deps.json
+C:\CodigoFonte\DeveloperStore_TestePratico\DeveloperStore_TestePratico\DeveloperStore\DeveloperStore.Data\bin\Debug\net8.0\DeveloperStore.Data.dll
+C:\CodigoFonte\DeveloperStore_TestePratico\DeveloperStore_TestePratico\DeveloperStore\DeveloperStore.Data\bin\Debug\net8.0\DeveloperStore.Data.pdb
+C:\CodigoFonte\DeveloperStore_TestePratico\DeveloperStore_TestePratico\DeveloperStore\DeveloperStore.Data\bin\Debug\net8.0\DeveloperStore.Domain.dll
+C:\CodigoFonte\DeveloperStore_TestePratico\DeveloperStore_TestePratico\DeveloperStore\DeveloperStore.Data\bin\Debug\net8.0\DeveloperStore.Domain.pdb
+C:\CodigoFonte\DeveloperStore_TestePratico\DeveloperStore_TestePratico\DeveloperStore\DeveloperStore.Data\obj\Debug\net8.0\DeveloperStore.Data.csproj.AssemblyReference.cache
+C:\CodigoFonte\DeveloperStore_TestePratico\DeveloperStore_TestePratico\DeveloperStore\DeveloperStore.Data\obj\Debug\net8.0\DeveloperStore.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\CodigoFonte\DeveloperStore_TestePratico\DeveloperStore_TestePratico\DeveloperStore\DeveloperStore.Data\obj\Debug\net8.0\DeveloperStore.Data.AssemblyInfoInputs.cache
+C:\CodigoFonte\DeveloperStore_TestePratico\DeveloperStore_TestePratico\DeveloperStore\DeveloperStore.Data\obj\Debug\net8.0\DeveloperStore.Data.AssemblyInfo.cs
+C:\CodigoFonte\DeveloperStore_TestePratico\DeveloperStore_TestePratico\DeveloperStore\DeveloperStore.Data\obj\Debug\net8.0\DeveloperStore.Data.csproj.CoreCompileInputs.cache
+C:\CodigoFonte\DeveloperStore_TestePratico\DeveloperStore_TestePratico\DeveloperStore\DeveloperStore.Data\obj\Debug\net8.0\DeveloperStore.Data.sourcelink.json
+C:\CodigoFonte\DeveloperStore_TestePratico\DeveloperStore_TestePratico\DeveloperStore\DeveloperStore.Data\obj\Debug\net8.0\Develope.D0DBCDBA.Up2Date
+C:\CodigoFonte\DeveloperStore_TestePratico\DeveloperStore_TestePratico\DeveloperStore\DeveloperStore.Data\obj\Debug\net8.0\DeveloperStore.Data.dll
+C:\CodigoFonte\DeveloperStore_TestePratico\DeveloperStore_TestePratico\DeveloperStore\DeveloperStore.Data\obj\Debug\net8.0\refint\DeveloperStore.Data.dll
+C:\CodigoFonte\DeveloperStore_TestePratico\DeveloperStore_TestePratico\DeveloperStore\DeveloperStore.Data\obj\Debug\net8.0\DeveloperStore.Data.pdb
+C:\CodigoFonte\DeveloperStore_TestePratico\DeveloperStore_TestePratico\DeveloperStore\DeveloperStore.Data\obj\Debug\net8.0\ref\DeveloperStore.Data.dll

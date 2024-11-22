@@ -1,0 +1,13 @@
+C:\CodigoFonte\DeveloperStore_TestePratico\DeveloperStore_TestePratico\DeveloperStore\DeveloperStore.Domain\bin\Debug\net8.0\DeveloperStore.Domain.deps.json
+C:\CodigoFonte\DeveloperStore_TestePratico\DeveloperStore_TestePratico\DeveloperStore\DeveloperStore.Domain\bin\Debug\net8.0\DeveloperStore.Domain.dll
+C:\CodigoFonte\DeveloperStore_TestePratico\DeveloperStore_TestePratico\DeveloperStore\DeveloperStore.Domain\bin\Debug\net8.0\DeveloperStore.Domain.pdb
+C:\CodigoFonte\DeveloperStore_TestePratico\DeveloperStore_TestePratico\DeveloperStore\DeveloperStore.Domain\obj\Debug\net8.0\DeveloperStore.Domain.csproj.AssemblyReference.cache
+C:\CodigoFonte\DeveloperStore_TestePratico\DeveloperStore_TestePratico\DeveloperStore\DeveloperStore.Domain\obj\Debug\net8.0\DeveloperStore.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\CodigoFonte\DeveloperStore_TestePratico\DeveloperStore_TestePratico\DeveloperStore\DeveloperStore.Domain\obj\Debug\net8.0\DeveloperStore.Domain.AssemblyInfoInputs.cache
+C:\CodigoFonte\DeveloperStore_TestePratico\DeveloperStore_TestePratico\DeveloperStore\DeveloperStore.Domain\obj\Debug\net8.0\DeveloperStore.Domain.AssemblyInfo.cs
+C:\CodigoFonte\DeveloperStore_TestePratico\DeveloperStore_TestePratico\DeveloperStore\DeveloperStore.Domain\obj\Debug\net8.0\DeveloperStore.Domain.csproj.CoreCompileInputs.cache
+C:\CodigoFonte\DeveloperStore_TestePratico\DeveloperStore_TestePratico\DeveloperStore\DeveloperStore.Domain\obj\Debug\net8.0\DeveloperStore.Domain.sourcelink.json
+C:\CodigoFonte\DeveloperStore_TestePratico\DeveloperStore_TestePratico\DeveloperStore\DeveloperStore.Domain\obj\Debug\net8.0\DeveloperStore.Domain.dll
+C:\CodigoFonte\DeveloperStore_TestePratico\DeveloperStore_TestePratico\DeveloperStore\DeveloperStore.Domain\obj\Debug\net8.0\refint\DeveloperStore.Domain.dll
+C:\CodigoFonte\DeveloperStore_TestePratico\DeveloperStore_TestePratico\DeveloperStore\DeveloperStore.Domain\obj\Debug\net8.0\DeveloperStore.Domain.pdb
+C:\CodigoFonte\DeveloperStore_TestePratico\DeveloperStore_TestePratico\DeveloperStore\DeveloperStore.Domain\obj\Debug\net8.0\ref\DeveloperStore.Domain.dll
