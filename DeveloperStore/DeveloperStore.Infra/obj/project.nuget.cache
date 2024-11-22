@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "08PzNjCE1Vw=",
+  "success": true,
+  "projectFilePath": "C:\\CodigoFonte\\DeveloperStore_TestePratico\\DeveloperStore_TestePratico\\DeveloperStore\\DeveloperStore.Infra\\DeveloperStore.Infra.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\BrunoMazzinghy\\.nuget\\packages\\sentry\\4.13.0\\sentry.4.13.0.nupkg.sha512"
+  ],
+  "logs": []
+}

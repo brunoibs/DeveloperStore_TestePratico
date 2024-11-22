@@ -1,0 +1,155 @@
+{
+  "version": 3,
+  "targets": {
+    "net8.0": {
+      "Sentry/4.13.0": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/Sentry.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Sentry.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/Sentry.targets": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Sentry/4.13.0": {
+      "sha512": "Wfw3M1WpFcrYaGzPm7QyUTfIOYkVXQ1ry6p4WYjhbLz9fPwV23SGQZTFDpdox67NHM0V0g1aoQ4YKLm4ANtEEg==",
+      "type": "package",
+      "path": "sentry/4.13.0",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "build/Sentry.Native.targets",
+        "build/Sentry.targets",
+        "buildTransitive/Sentry.Native.targets",
+        "buildTransitive/Sentry.targets",
+        "lib/net462/Sentry.dll",
+        "lib/net462/Sentry.xml",
+        "lib/net6.0/Sentry.dll",
+        "lib/net6.0/Sentry.xml",
+        "lib/net7.0-android33.0/Sentry.dll",
+        "lib/net7.0-android33.0/Sentry.xml",
+        "lib/net7.0-ios16.1/Sentry.dll",
+        "lib/net7.0-ios16.1/Sentry.xml",
+        "lib/net7.0-maccatalyst16.1/Sentry.dll",
+        "lib/net7.0-maccatalyst16.1/Sentry.xml",
+        "lib/net8.0-android34.0/Sentry.dll",
+        "lib/net8.0-android34.0/Sentry.xml",
+        "lib/net8.0-ios18.0/Sentry.dll",
+        "lib/net8.0-ios18.0/Sentry.xml",
+        "lib/net8.0-maccatalyst18.0/Sentry.dll",
+        "lib/net8.0-maccatalyst18.0/Sentry.xml",
+        "lib/net8.0/Sentry.dll",
+        "lib/net8.0/Sentry.xml",
+        "lib/netstandard2.0/Sentry.dll",
+        "lib/netstandard2.0/Sentry.xml",
+        "lib/netstandard2.1/Sentry.dll",
+        "lib/netstandard2.1/Sentry.xml",
+        "sentry-native/linux-x64/libsentry-native.a",
+        "sentry-native/osx/libsentry-native.a",
+        "sentry-native/win-x64/sentry-native.lib",
+        "sentry-nuget.png",
+        "sentry.4.13.0.nupkg.sha512",
+        "sentry.nuspec",
+        "tools/sentry-cli-Darwin-arm64",
+        "tools/sentry-cli-Darwin-x86_64",
+        "tools/sentry-cli-Linux-aarch64",
+        "tools/sentry-cli-Linux-i686",
+        "tools/sentry-cli-Linux-x86_64",
+        "tools/sentry-cli-Windows-i686.exe",
+        "tools/sentry-cli-Windows-x86_64.exe"
+      ]
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net8.0": [
+      "Sentry >= 4.13.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\BrunoMazzinghy\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\CodigoFonte\\DeveloperStore_TestePratico\\DeveloperStore_TestePratico\\DeveloperStore\\DeveloperStore.Infra\\DeveloperStore.Infra.csproj",
+      "projectName": "DeveloperStore.Infra",
+      "projectPath": "C:\\CodigoFonte\\DeveloperStore_TestePratico\\DeveloperStore_TestePratico\\DeveloperStore\\DeveloperStore.Infra\\DeveloperStore.Infra.csproj",
+      "packagesPath": "C:\\Users\\BrunoMazzinghy\\.nuget\\packages\\",
+      "outputPath": "C:\\CodigoFonte\\DeveloperStore_TestePratico\\DeveloperStore_TestePratico\\DeveloperStore\\DeveloperStore.Infra\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\BrunoMazzinghy\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net8.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "projectReferences": {}
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "all"
+      },
+      "SdkAnalysisLevel": "9.0.100"
+    },
+    "frameworks": {
+      "net8.0": {
+        "targetAlias": "net8.0",
+        "dependencies": {
+          "Sentry": {
+            "target": "Package",
+            "version": "[4.13.0, )"
+          }
+        },
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.100/PortableRuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}
