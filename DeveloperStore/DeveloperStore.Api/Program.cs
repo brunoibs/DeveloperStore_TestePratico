@@ -2,6 +2,8 @@
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
+using DeveloperStore.Api.Filter;
+using DeveloperStore.DI;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -23,14 +25,13 @@ builder.Services.AddCors(options =>
         });
 });
 builder.Services.AddControllers();
-
-// Add services to the container.
-
-builder.Services.AddControllers();
+builder.Services.AddControllers(options =>
+{
+    options.Filters.Add<ErrorHandlingFilter>();
+});
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
-
 
 // Configura��es do JWT
 var jwtSettings = builder.Configuration.GetSection("JwtSettings");
@@ -61,6 +62,9 @@ builder.Services.AddAuthentication(options =>
 builder.Services.AddAuthorization();
 
 
+var ConnectionStrings = builder.Configuration.GetSection("ConnectionStrings");
+var strConnect = ConnectionStrings["DefaultConnection"];
+ResolveInject.RegisterServices(builder.Services, strConnect);
 
 var app = builder.Build();
 

@@ -14,7 +14,7 @@ namespace DeveloperStore.Application.Interface
         Task<IContractResult> Delete(Guid id);
         Task<IContractResult> Insert(Product_Sale model);
         Task<IContractResult> Update(Product_Sale model);
-        IContractResult ListAll();
+        Task<IContractResult> ListAll();
         Task<IContractResult> GetById(int id);
         Task<IContractResult> GetById(Guid id);
     }

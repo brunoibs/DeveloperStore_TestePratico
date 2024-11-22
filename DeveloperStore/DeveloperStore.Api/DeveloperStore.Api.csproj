@@ -13,6 +13,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\DeveloperStore.Application\DeveloperStore.Application.csproj" />
+    <ProjectReference Include="..\DeveloperStore.DI\DeveloperStore.DI.csproj" />
     <ProjectReference Include="..\DeveloperStore.Domain\DeveloperStore.Domain.csproj" />
     <ProjectReference Include="..\DeveloperStore.Infra\DeveloperStore.Infra.csproj" />
   </ItemGroup>

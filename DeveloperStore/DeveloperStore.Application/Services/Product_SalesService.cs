@@ -47,9 +47,17 @@ namespace DeveloperStore.Application.Services
             try
             {
                 var model = _repo.GetById(id);
-                result.Valid = _repo.Delete(id);
-                result.Message = "Excluido com Sucesso.";
-                result.Data = model;
+                if (model == null)
+                {
+                    result.Valid = false;
+                    result.Message = "Objeto não localizado.";
+                }
+                else
+                {
+                    result.Valid = _repo.Delete(id);
+                    result.Message = "Excluido com Sucesso.";
+                    result.Data = model;
+                }
             }
             catch (Exception ex)
             {
@@ -67,9 +75,17 @@ namespace DeveloperStore.Application.Services
             try
             {
                 var model = _repo.GetById(id);
-                result.Valid = _repo.Delete(id);
-                result.Message = "Excluido com Sucesso.";
-                result.Data = model;
+                if (model == null)
+                {
+                    result.Valid = false;
+                    result.Message = "Objeto não localizado.";
+                }
+                else
+                {
+                    result.Valid = _repo.Delete(id);
+                    result.Message = "Excluido com Sucesso.";
+                    result.Data = model;
+                }              
             }
             catch (Exception ex)
             {
@@ -87,9 +103,17 @@ namespace DeveloperStore.Application.Services
             try
             {
                 var obj = _repo.GetById(id);
-                result.Valid = true;
-                result.Message = "Sucesso.";
-                result.Data = obj;
+                if (obj == null)
+                {
+                    result.Valid = false;
+                    result.Message = "Objeto não localizado.";
+                }
+                else
+                {
+                    result.Valid = true;
+                    result.Message = "Sucesso.";
+                    result.Data = obj;
+                }
             }
             catch (Exception ex)
             {
@@ -107,9 +131,17 @@ namespace DeveloperStore.Application.Services
             try
             {
                 var obj = _repo.GetById(id);
-                result.Valid = true;
-                result.Message = "Sucesso.";
-                result.Data = obj;
+                if (obj == null)
+                {
+                    result.Valid = false;
+                    result.Message = "Objeto não localizado.";
+                }
+                else
+                {
+                    result.Valid = true;
+                    result.Message = "Sucesso.";
+                    result.Data = obj;
+                }
             }
             catch (Exception ex)
             {
@@ -142,7 +174,7 @@ namespace DeveloperStore.Application.Services
         }
 
 
-        public IContractResult ListAll()
+        public async Task<IContractResult> ListAll()
         {
             var result = new ContractResult();
             try

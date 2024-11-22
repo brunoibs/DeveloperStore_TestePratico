@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -41,15 +42,56 @@ namespace DeveloperStore.Application.Services
 
         #endregion
 
+        internal IContractResult ValidateSale(Sale sale)
+        {
+            var errors = new StringBuilder();
+            var erro = string.Empty;
+            var result = new ContractResult();
+            if (sale.Dt_Sale > DateTime.UtcNow)
+                errors.AppendLine ("The sale date cannot be in the future.");
+
+            if (sale.Total <= 0)
+                errors.AppendLine("The total amount must be greater than zero.");
+
+            if (!sale.Product_Sales.Any())
+                errors.AppendLine("At least one product must be included in the sale.");
+
+            if (sale.Product_Sales.Any(p => p.Amount <= 0))
+                errors.AppendLine("All products must have a quantity greater than zero.");
+
+            if (sale.Product_Sales.Any(p => p.Price <= 0))
+                errors.AppendLine("All products must have a price greater than zero.");
+            erro = errors.ToString();
+
+            if (string.IsNullOrEmpty(erro))
+            {
+                result = result.Valido();
+            }
+            else
+            {
+                result = result.InValido();
+                result.Message = erro;
+            }
+            return result;
+        }
+
         public async Task<IContractResult> Delete(int id)
         {
             var result = new ContractResult();
             try
             {
                 var model = _repo.GetById(id);
-                result.Valid = _repo.Delete(id);
-                result.Message = "Excluido com Sucesso.";
-                result.Data = model;
+                if (model == null)
+                {
+                    result.Valid = false;
+                    result.Message = "Objeto não localizado.";
+                }
+                else
+                {
+                    result.Valid = _repo.Delete(id);
+                    result.Message = "Excluido com Sucesso.";
+                    result.Data = model;
+                }
             }
             catch (Exception ex)
             {
@@ -67,9 +109,17 @@ namespace DeveloperStore.Application.Services
             try
             {
                 var model = _repo.GetById(id);
-                result.Valid = _repo.Delete(id);
-                result.Message = "Excluido com Sucesso.";
-                result.Data = model;
+                if (model == null)
+                {
+                    result.Valid = false;
+                    result.Message = "Objeto não localizado.";
+                }
+                else
+                {
+                    result.Valid = _repo.Delete(id);
+                    result.Message = "Excluido com Sucesso.";
+                    result.Data = model;
+                }
             }
             catch (Exception ex)
             {
@@ -87,9 +137,17 @@ namespace DeveloperStore.Application.Services
             try
             {
                 var obj = _repo.GetById(id);
-                result.Valid = true;
-                result.Message = "Sucesso.";
-                result.Data = obj;
+                if (obj == null)
+                {
+                    result.Valid = false;
+                    result.Message = "Objeto não localizado.";
+                }
+                else
+                {
+                    result.Valid = true;
+                    result.Message = "Sucesso.";
+                    result.Data = obj;
+                }
             }
             catch (Exception ex)
             {
@@ -107,9 +165,17 @@ namespace DeveloperStore.Application.Services
             try
             {
                 var obj = _repo.GetById(id);
-                result.Valid = true;
-                result.Message = "Sucesso.";
-                result.Data = obj;
+                if (obj == null)
+                {
+                    result.Valid = false;
+                    result.Message = "Objeto não localizado.";
+                }
+                else
+                {
+                    result.Valid = true;
+                    result.Message = "Sucesso.";
+                    result.Data = obj;
+                }
             }
             catch (Exception ex)
             {
@@ -127,6 +193,10 @@ namespace DeveloperStore.Application.Services
             var result = new ContractResult();
             try
             {
+                result = (ContractResult)ValidateSale(model);
+                if (!result.Valid)
+                    return result;
+
                 result.Valid = _repo.Add(model);
                 result.Message = "Salvo com Sucesso.";
                 result.Data = model;
@@ -142,7 +212,7 @@ namespace DeveloperStore.Application.Services
         }
 
 
-        public IContractResult ListAll()
+        public async Task<IContractResult> ListAll()
         {
             var result = new ContractResult();
             try
